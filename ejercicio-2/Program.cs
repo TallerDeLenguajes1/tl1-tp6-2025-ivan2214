@@ -6,12 +6,12 @@ int operacion = 0;
 
 do
 {
-    System.Console.WriteLine("Ingrese una operación: ");
-    System.Console.WriteLine("1. Sumar");
-    System.Console.WriteLine("2. Restar");
-    System.Console.WriteLine("3. Multiplicar");
-    System.Console.WriteLine("4. Dividir");
-    System.Console.WriteLine("5. Salir");
+    Console.WriteLine("Ingrese una operación: ");
+    Console.WriteLine("1. Sumar");
+    Console.WriteLine("2. Restar");
+    Console.WriteLine("3. Multiplicar");
+    Console.WriteLine("4. Dividir");
+    Console.WriteLine("5. Salir");
 
     string? tempOperacion = Console.ReadLine();
 
@@ -32,7 +32,7 @@ do
     }
 
 
-    System.Console.WriteLine("Ingrese el primer número: ");
+    Console.WriteLine("Ingrese el primer número: ");
     string? temp1 = Console.ReadLine();
     if (temp1 != null)
     {
@@ -44,7 +44,7 @@ do
         }
 
     }
-    System.Console.WriteLine("Ingrese el segundo número: ");
+    Console.WriteLine("Ingrese el segundo número: ");
     string? temp2 = Console.ReadLine();
     if (temp2 != null)
     {
@@ -58,7 +58,7 @@ do
 
 
     int resultado = calculadora(a, b, operacion);
-    System.Console.WriteLine($"El resultado es: {resultado}");
+    Console.WriteLine($"El resultado es: {resultado}");
 
 } while (operacion != 5);
 
