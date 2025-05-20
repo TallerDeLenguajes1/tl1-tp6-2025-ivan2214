@@ -1,5 +1,5 @@
 ﻿Console.Write("Ingrese un número: ");
-string entrada = Console.ReadLine();
+string? entrada = Console.ReadLine();
 
 
 bool esNumero = int.TryParse(entrada, out int numero);
