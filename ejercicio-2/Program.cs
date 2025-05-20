@@ -5,11 +5,11 @@ int operacionInicial = 0;
 do
 {
 
-    System.Console.WriteLine("Ingrese una operación: ");
-    System.Console.WriteLine("1: Calculadora");
-    System.Console.WriteLine("2: Calculadora Cientifica");
-    System.Console.WriteLine("3: Calcular el maximo y el minimo entre dos numeros");
-    System.Console.WriteLine("0: Salir");
+    Console.WriteLine("Ingrese una operación: ");
+    Console.WriteLine("1: Calculadora");
+    Console.WriteLine("2: Calculadora Cientifica");
+    Console.WriteLine("3: Calcular el maximo y el minimo entre dos numeros");
+    Console.WriteLine("0: Salir");
 
     string? tempOperacion = Console.ReadLine();
 
@@ -28,16 +28,16 @@ do
     switch (operacionInicial)
     {
         case 1:
-            System.Console.WriteLine(calculadora());
+            Console.WriteLine(calculadora());
             break;
         case 2:
-            System.Console.WriteLine(calculadoraAvanzada());
+            Console.WriteLine(calculadoraAvanzada());
             break;
         case 3:
             calcularMaximoMinimoEntreDosNumeros();
             break;
         default:
-            System.Console.WriteLine("Operación no reconocida");
+            Console.WriteLine("Operación no reconocida");
             break;
     }
 
@@ -183,7 +183,7 @@ int calculadoraAvanzada()
         case 3:
             if (a < 0)
             {
-                System.Console.WriteLine("No se puede calcular la raiz cuadrada de un numero negativo");
+                Console.WriteLine("No se puede calcular la raiz cuadrada de un numero negativo");
                 return 0;
             }
             return raizCuadrada(a);
